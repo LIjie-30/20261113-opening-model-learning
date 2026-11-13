@@ -1,0 +1,2 @@
+# 20261113-opening-model-learning
+基于开源项目ChiShengChen/pytorch_deep_learning_medimg_tutorial，目标实现医学图像分类，并学习相关参数模型，深入去了解。
