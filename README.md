@@ -1,3 +1,4 @@
+ HEAD
 # 醫學影像分類深度學習模型教學
 
 這個專案簡單實現了三種常見不同的深度學習模型（VGG16、ResNet18、ViT）來進行醫學影像分類任務，使用 PathMNIST 資料集。
@@ -183,3 +184,7 @@ python main.py
 ## 其他參考資料
 這份以影像辨識為主，若想學其他時序模型可以參考這份：
 https://github.com/ChiShengChen/Deep_learning_introducrion
+=======
+# 20261113-opening-model-learning
+基于开源项目ChiShengChen/pytorch_deep_learning_medimg_tutorial，目标实现医学图像分类，并学习相关参数模型，深入去了解。
+>>>>>>> 2158903a3d3fa7b1341d9450ae34c1d67345e319
