@@ -1,0 +1,21 @@
+# 数据文件
+data/
+*.csv
+*.npz
+
+# 模型权重
+checkpoints/
+*.pth
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 环境
+envirenment/
+.venv/
+venv/
+
+# 编辑器
+.vscode/
+.idea/
