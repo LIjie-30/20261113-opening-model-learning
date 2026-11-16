@@ -32,9 +32,9 @@ def main():
     
     # 訓練模型
     models = {
-        "VGG16": VGG16(num_classes),
+        #"VGG16": VGG16(num_classes),
         "ResNet18": ResNet18(num_classes),
-        "ViT": ViT(num_classes)
+        #"ViT": ViT(num_classes)
     }
     
     for model_name, model in models.items():
@@ -42,17 +42,17 @@ def main():
         evaluate(model, test_loader, device, model_name)
 
     # 手動實作的 ViT
-    model = ViTHandmade(
-        image_size=28,        # 輸入圖像大小
-        patch_size=4,         # patch 大小
-        in_channels=3,        # 輸入通道數
-        num_classes=9,        # 分類數量
-        embed_dim=128,        # 嵌入維度
-        depth=6,              # Transformer 層數
-        num_heads=8          # 注意力頭數
-    )
-    train_and_test(model, train_loader, device, "ViTHandmade", epochs=10)
-    evaluate(model, test_loader, device, "ViTHandmade")
+    # model = ViTHandmade(
+    #     image_size=28,        # 輸入圖像大小
+    #     patch_size=4,         # patch 大小
+    #     in_channels=3,        # 輸入通道數
+    #     num_classes=9,        # 分類數量
+    #     embed_dim=128,        # 嵌入維度
+    #     depth=6,              # Transformer 層數
+    #     num_heads=8          # 注意力頭數
+    # )
+    # train_and_test(model, train_loader, device, "ViTHandmade", epochs=10)
+    # evaluate(model, test_loader, device, "ViTHandmade")
     
 if __name__ == "__main__":
     main() 
